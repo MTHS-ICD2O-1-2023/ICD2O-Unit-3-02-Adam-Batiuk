@@ -34,27 +34,47 @@
       <br />
       <!-- Simple Textfield for integers-->
       <form action="#">
+        <br />
+        <p>Length:</p>
         <div class="mdl-textfield mdl-js-textfield">
           <!-- input pattern attribute -->
           <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length" />
           <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="demo-input">Some Number ... (Unit)</label>
+          <label class="mdl-textfield__label" for="demo-input">Length ... (mm)</label>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number</span>
         </div>
+        <br />
+        <p>Width:</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <!-- input pattern attribute -->
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="width" />
+          <!-- mdl-textfield__label -->
+          <label class="mdl-textfield__label" for="demo-input">Width ... (mm)</label>
+          <!-- class "mdl-textfield__error" -->
+          <span class="mdl-textfield__error">Input is not a number</span>
+        </div>
+        <br />
+        <p>Height:</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <!-- input pattern attribute -->
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height" />
+          <!-- mdl-textfield__label -->
+          <label class="mdl-textfield__label" for="demo-input">Height ... (mm)</label>
+          <!-- class "mdl-textfield__error" -->
+          <span class="mdl-textfield__error">Input is not a number</span>
+        </div>
+        <br />
+        <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()">
+          Calculate
+        </button>
       </form>
-      <br />
-      <!-- Accent-colored raised button with ripple -->
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-        onclick="myButtonClicked()">
-        Button
-      </button>
       <br />
       <br />
       <div class="page-content-answer">
-        <div id="answer">
-          Response
-        </div>
+        <div id="answer"></div>
       </div>
     </main>
   </div>
